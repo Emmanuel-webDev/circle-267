@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/* Area of triangle */
+function area(a,b,h){
+return 1 / 2 * a + b * h
+}
+const triangle = area(5,6,7);
+console.log(`The area is ${triangle}`);
+
+
+const a = 9;
+if(Math.sign(a) > 0){
+     console.log('Positive integer');
+}else{
+    console.log('Negative integer')
+}
+
+const b = -11;
+if(Math.sign(b) > 0){
+    console.log('Positive integer');
+}else{
+     console.log('Negative integer')
+}
+
+
+
+
+/*Larger value*/
+function getLagerval(a, b){
+    if(a > b){
+        return a;
+    }else {
+        return b;
+    }
+}
+let check = getLagerval(0.00001, 0.000111);
+console.log(check);
+
+/*Even or odd*/
+function evenorodd (){
+    for(let i = 0; i <= 15; i++){
+        if(i % 2 === 0){
+            console.log(`${i}-even`)
+        }else{
+            console.log(`${i}-odd`);
+        }
+    }
+}
+
+evenorodd();
+
+    </script>
+</body>
+</html>
+
